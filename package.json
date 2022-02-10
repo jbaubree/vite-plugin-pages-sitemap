@@ -1,7 +1,7 @@
 {
   "name": "vite-plugin-pages-sitemap",
   "description": "vite-plugin-pages based sitemap generator",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
