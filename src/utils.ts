@@ -1,7 +1,7 @@
-export const dynamicRouteRE = /^\[.+\]$/
-export const nuxtDynamicRouteRE = /^_[\s\S]*$/
+const dynamicRouteRE = /\[.+\]/
+const nuxtDynamicRouteRE = /_[\s\S]*/
 
-export function isDynamicRoute(routePath: string, nuxtStyle: Boolean = false) {
+export function isDynamicRoute(routePath: string, nuxtStyle: boolean) {
   return nuxtStyle
     ? nuxtDynamicRouteRE.test(routePath)
     : dynamicRouteRE.test(routePath)
