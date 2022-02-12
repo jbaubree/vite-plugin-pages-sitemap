@@ -19,11 +19,11 @@ export default function generateSitemap(options: UserOptions) {
   stream.end()
 }
 
-function getSitemapLinks(options: ResolvedOptions) {
+export function getSitemapLinks(options: ResolvedOptions) {
   const hostname = options.hostname
 
   return [...options.routes.values()]
-    .filter(pageRoute => !isDynamicRoute(pageRoute.component as unknown as string, options.nuxtStyle))
+    .filter(pageRoute => !isDynamicRoute(pageRoute.component as string, options.nuxtStyle))
     .map(pageRoute => ({
       url: removeMaybeSuffix('/', hostname) + pageRoute.path,
       changefreq: options.changefreq,
@@ -32,11 +32,11 @@ function getSitemapLinks(options: ResolvedOptions) {
     }))
 }
 
-function getDestPath(sitemap: ResolvedOptions) {
+export function getDestPath(sitemap: ResolvedOptions) {
   return ensurePrefix('./', sitemap.dest)
 }
 
-function getResolvedPath(sitemap: ResolvedOptions) {
+export function getResolvedPath(sitemap: ResolvedOptions) {
   const SITEMAP_EXTENSION = '.xml'
   const filenameWithExtension = ensureSuffix(SITEMAP_EXTENSION, sitemap.filename)
   return resolve(`${getDestPath(sitemap)}/${filenameWithExtension}`)

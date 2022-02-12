@@ -1,5 +1,3 @@
-import type { RouteRecordRaw } from 'vue-router'
-
 /**
  * Plugin options.
  */
@@ -13,7 +11,7 @@ interface Options {
    * Generated routes from vite-plugin-pages
    * @default []
    */
-  routes: RouteRecordRaw[]
+  routes: any[]
   /**
    * File name
    * @default 'sitemap'

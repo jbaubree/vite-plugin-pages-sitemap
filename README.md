@@ -21,13 +21,12 @@ Add to your `vite.config.js`:
 ```js
 import Pages from 'vite-plugin-pages'
 import generateSitemap from 'vite-plugin-pages-sitemap'
-import type { RouteRecordRaw } from 'vue-router'
 
 export default {
   plugins: [
     // ...
     Pages({
-      onRoutesGenerated: (routes: RouteRecordRaw[]) => (generateSitemap({ routes })),
+      onRoutesGenerated: (routes) => (generateSitemap({ routes })),
     }),
   ],
 };
@@ -44,7 +43,7 @@ Base URI.
 
 ### routes
 
-- **Type:** `RouteRecordRaw[]`
+- **Type:** `Route[]`
 - **Default:** `[]`
 
 Generated routes from vite-plugin-pages.
