@@ -1,7 +1,7 @@
 import { resolve } from 'path'
 import { existsSync } from 'fs'
 import { describe, expect, test } from 'vitest'
-import generateSitemap, { getSitemapLinks, getDestPath, getResolvedPath } from '../src'
+import generateSitemap, { getDestPath, getResolvedPath, getSitemapLinks } from '../src'
 import { resolveOptions } from '../src/options'
 
 describe('Index', () => {

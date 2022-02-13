@@ -3,7 +3,7 @@ import { resolve } from 'path'
 import { SitemapStream } from 'sitemap'
 import { ensurePrefix } from '@antfu/utils'
 
-import { isDynamicRoute, ensureSuffix, removeMaybeSuffix } from './utils'
+import { ensureSuffix, isDynamicRoute, removeMaybeSuffix } from './utils'
 import { resolveOptions } from './options'
 import type { ResolvedOptions, UserOptions } from './types'
 

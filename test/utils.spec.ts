@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'vitest'
-import { isDynamicRoute, ensureSuffix, removeMaybeSuffix } from '../src/utils'
+import { ensureSuffix, isDynamicRoute, removeMaybeSuffix } from '../src/utils'
 
 describe('Utils', () => {
   test('Dynamic route', () => {
