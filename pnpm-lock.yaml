@@ -15,7 +15,6 @@ importers:
       tsup: ^4.14.0
       typescript: ^4.3.5
       vitest: ^0.3.4
-      vue-router: ^4.0.11
     devDependencies:
       '@antfu/eslint-config': 0.7.0_eslint@7.32.0+typescript@4.5.5
       '@antfu/utils': 0.4.0
@@ -28,7 +27,6 @@ importers:
       tsup: 4.14.0_typescript@4.5.5
       typescript: 4.5.5
       vitest: 0.3.4_c8@7.11.0
-      vue-router: 4.0.12
 
   example:
     specifiers:
@@ -648,6 +646,7 @@ packages:
 
   /@vue/devtools-api/6.0.2:
     resolution: {integrity: sha512-1W8ylfudTFepNgpgY1Dp29iVPlseIy+0+4xXoMkxKmdnxWx8vm8dNgz4F83zML46hHb9aP382JURFfqLuJcWYQ==}
+    dev: false
 
   /@vue/reactivity-transform/3.2.30:
     resolution: {integrity: sha512-Le5XzCJyK3qTjoTnvQG/Ehu8fYjayauMNFyMaEnwFlm/avDofpuibpS9u+/6AgzsGnVWN+i0Jgf25bJd9DIwMw==}
@@ -3820,14 +3819,6 @@ packages:
       semver: 6.3.0
     transitivePeerDependencies:
       - supports-color
-    dev: true
-
-  /vue-router/4.0.12:
-    resolution: {integrity: sha512-CPXvfqe+mZLB1kBWssssTiWg4EQERyqJZes7USiqfW9B5N2x+nHlnsM1D3b5CaJ6qgCvMmYJnz+G0iWjNCvXrg==}
-    peerDependencies:
-      vue: ^3.0.0
-    dependencies:
-      '@vue/devtools-api': 6.0.2
     dev: true
 
   /vue-router/4.0.12_vue@3.2.30:
