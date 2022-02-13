@@ -39,10 +39,10 @@ jobs:
       - name: Run test
         run: pnpm test
 
-      - if: ${{ matrix.node == 14 }} && ${{ matrix.os == 'ubuntu-latest' }}
+      - if: ${{ matrix.node == 14 && matrix.os == 'ubuntu-latest' }}
         name: Get Coverage for badge
         run: |
-          SUMMARY="$(pnpm test -- --coverageReporters='text-summary' | tail -2 | head -1)"
+          SUMMARY="$(pnpm test | tail -2 | head -1)"
           TOKENS=($SUMMARY)
           echo "COVERAGE=$(echo ${TOKENS[2]})" >> $GITHUB_ENV
           REF=${{ github.ref }}
@@ -51,7 +51,7 @@ jobs:
           BRANCH_NAME="${PATHS[1]}_${PATHS[2]}"
           echo $BRANCH_NAME
           echo "BRANCH=$(echo ${BRANCH_NAME})" >> $GITHUB_ENV
-      - if: ${{ matrix.node == 14 }} && ${{ matrix.os == 'ubuntu-latest' }}
+      - if: ${{ matrix.node == 14 && matrix.os == 'ubuntu-latest' }}
         name: Create badge
         uses: schneegans/dynamic-badges-action@v1.0.0
         with:
