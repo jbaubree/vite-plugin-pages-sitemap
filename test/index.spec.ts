@@ -1,5 +1,5 @@
 import { resolve } from 'path'
-import { existsSync, rmdirSync } from 'fs'
+import { existsSync } from 'fs'
 import { describe, expect, test } from 'vitest'
 import generateSitemap, { getSitemapLinks, getDestPath, getResolvedPath } from '../src'
 import { resolveOptions } from '../src/options'
@@ -51,6 +51,5 @@ describe('Index', () => {
     }
     generateSitemap(options)
     expect(existsSync(getDestPath(resolveOptions(options)))).toBe(true)
-    rmdirSync(getDestPath(resolveOptions(options)), { recursive: true })
   })
 })
