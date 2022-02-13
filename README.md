@@ -34,7 +34,7 @@ export default {
   plugins: [
     // ...
     Pages({
-      onRoutesGenerated: (routes) => (generateSitemap({ routes })),
+      onRoutesGenerated: routes => (generateSitemap({ routes })),
     }),
   ],
 };
