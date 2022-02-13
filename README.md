@@ -100,4 +100,4 @@ Is Nuxt.js style route naming.
 
 ## License
 
-MIT License © 2021 [jbaubree](https://github.com/jbaubree)
+MIT License © 2022 [jbaubree](https://github.com/jbaubree)
