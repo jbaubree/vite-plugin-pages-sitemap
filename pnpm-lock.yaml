@@ -13,6 +13,7 @@ importers:
       tsup: ^5.11.13
       typescript: ^4.5.5
       vitest: ^0.3.4
+      xml-formatter: ^2.6.1
     devDependencies:
       '@antfu/eslint-config': 0.16.1_eslint@8.9.0+typescript@4.5.5
       '@antfu/utils': 0.5.0
@@ -23,6 +24,7 @@ importers:
       tsup: 5.11.13_typescript@4.5.5
       typescript: 4.5.5
       vitest: 0.3.4_c8@7.11.0
+      xml-formatter: 2.6.1
 
   example:
     specifiers:
@@ -3610,6 +3612,18 @@ packages:
   /xdg-basedir/4.0.0:
     resolution: {integrity: sha512-PSNhEJDejZYV7h50BohL09Er9VaIefr2LMAf3OEmpCkjOi34eYyQYAXUTjEQtZJTKcF0E2UKTh+osDLsgNim9Q==}
     engines: {node: '>=8'}
+    dev: true
+
+  /xml-formatter/2.6.1:
+    resolution: {integrity: sha512-dOiGwoqm8y22QdTNI7A+N03tyVfBlQ0/oehAzxIZtwnFAHGeSlrfjF73YQvzSsa/Kt6+YZasKsrdu6OIpuBggw==}
+    engines: {node: '>= 10'}
+    dependencies:
+      xml-parser-xo: 3.2.0
+    dev: true
+
+  /xml-parser-xo/3.2.0:
+    resolution: {integrity: sha512-8LRU6cq+d7mVsoDaMhnkkt3CTtAs4153p49fRo+HIB3I1FD1o5CeXRjRH29sQevIfVJIcPjKSsPU/+Ujhq09Rg==}
+    engines: {node: '>= 10'}
     dev: true
 
   /y18n/5.0.8:

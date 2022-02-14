@@ -1,7 +1,9 @@
 import { resolve } from 'path'
-import { existsSync } from 'fs'
+import { existsSync, readFileSync } from 'fs'
 import { describe, expect, test } from 'vitest'
-import generateSitemap, { getDestPath, getResolvedPath, getSitemapLinks } from '../src'
+import format from 'xml-formatter'
+
+import generateSitemap, { getDestPath, getResolvedPath, getSitemapLinks, writeXmlFile } from '../src'
 import { resolveOptions } from '../src/options'
 
 describe('Index', () => {
@@ -51,5 +53,13 @@ describe('Index', () => {
     }
     generateSitemap(options)
     expect(existsSync(getDestPath(resolveOptions(options)))).toBe(true)
+  })
+
+  test('Write XML file', async() => {
+    const TEMPLATE = '<?xml version="1.0" encoding="UTF-8"?><urlset></urlset>'
+    writeXmlFile(resolve('./test/sitemap/sitemap.xml'), TEMPLATE, resolveOptions({}))
+    expect(readFileSync(resolve('./test/sitemap/sitemap.xml')).toString('utf-8')).toEqual(TEMPLATE)
+    writeXmlFile(resolve('./test/sitemap/sitemap.xml'), TEMPLATE, resolveOptions({ readable: true }))
+    expect(readFileSync(resolve('./test/sitemap/sitemap.xml')).toString('utf-8')).toEqual(format(TEMPLATE))
   })
 })

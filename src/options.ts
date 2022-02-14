@@ -10,6 +10,7 @@ export function resolveOptions(userOptions: UserOptions): ResolvedOptions {
       changefreq: 'daily',
       priority: 1,
       lastmod: new Date(),
+      readable: false,
       nuxtStyle: false,
     },
     userOptions,

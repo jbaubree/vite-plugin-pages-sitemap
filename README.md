@@ -91,6 +91,13 @@ Priority option for sitemap.
 
 Last modification option for sitemap.
 
+### readable
+
+- **Type:** `boolean`
+- **Default:** `false`
+
+Converts XML into a human readable format
+
 ### nuxtStyle
 
 - **Type:** `boolean`

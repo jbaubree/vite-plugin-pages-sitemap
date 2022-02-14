@@ -38,6 +38,11 @@ interface Options {
    */
   lastmod: Date
   /**
+   * Converts XML into a human readable format
+   * @default false
+   */
+  readable: boolean
+  /**
    * Is Nuxt.js style route naming
    * @default false
    */

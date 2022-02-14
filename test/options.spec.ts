@@ -15,6 +15,7 @@ describe('Options', () => {
         "lastmod": Any<Date>,
         "nuxtStyle": false,
         "priority": 1,
+        "readable": false,
         "routes": [],
       }
     `)
