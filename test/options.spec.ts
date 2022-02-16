@@ -8,6 +8,7 @@ describe('Options', () => {
       lastmod: expect.any(Date),
     }, `
       {
+        "allowRobots": true,
         "changefreq": "daily",
         "dest": "public",
         "filename": "sitemap",

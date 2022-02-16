@@ -3,7 +3,7 @@ import { existsSync, readFileSync } from 'fs'
 import { describe, expect, test } from 'vitest'
 import format from 'xml-formatter'
 
-import generateSitemap, { getDestPath, getResolvedPath, getSitemapLinks, writeXmlFile } from '../src'
+import generateSitemap, { getDestPath, getFinalSitemapPath, getResolvedPath, getSitemapLinks, writeRobotFile, writeXmlFile } from '../src'
 import { resolveOptions } from '../src/options'
 
 describe('Index', () => {
@@ -12,34 +12,19 @@ describe('Index', () => {
   })
 
   test('Get dest path', async() => {
-    expect(getDestPath(resolveOptions({}))).toEqual('./public')
-    expect(getDestPath(resolveOptions({
-      dest: 'test',
-    }))).toEqual('./test')
-    expect(getDestPath(resolveOptions({
-      dest: './test',
-    }))).toEqual('./test')
+    expect(getDestPath('public')).toEqual('./public')
+    expect(getDestPath('./public')).toEqual('./public')
   })
 
   test('Get resolved path', async() => {
-    expect(getResolvedPath(resolveOptions({}))).toEqual(resolve('./public/sitemap.xml'))
-    expect(getResolvedPath(resolveOptions({
-      dest: 'test',
-    }))).toEqual(resolve('./test/sitemap.xml'))
-    expect(getResolvedPath(resolveOptions({
-      dest: 'test',
-      filename: 'test',
-    }))).toEqual(resolve('./test/test.xml'))
-    expect(getResolvedPath(resolveOptions({
-      dest: 'test',
-      filename: 'test.xml',
-    }))).toEqual(resolve('./test/test.xml'))
+    expect(getResolvedPath('sitemap', '.xml', 'public')).toEqual(resolve('./public/sitemap.xml'))
+    expect(getResolvedPath('sitemap.xml', '.xml', 'public')).toEqual(resolve('./public/sitemap.xml'))
+    expect(getResolvedPath('sitemap.xml', '.xml', './public')).toEqual(resolve('./public/sitemap.xml'))
   })
 
   test('Generate sitemap', async() => {
     generateSitemap({})
-    expect(existsSync(getDestPath(resolveOptions({})))).toBe(false)
-
+    expect(existsSync(getDestPath('public'))).toBe(false)
     const options = {
       dest: 'test/sitemap',
       routes: [
@@ -50,9 +35,10 @@ describe('Index', () => {
           props: true,
         },
       ],
+      allowRobots: false,
     }
     generateSitemap(options)
-    expect(existsSync(getDestPath(resolveOptions(options)))).toBe(true)
+    expect(existsSync(getDestPath('test/sitemap'))).toBe(true)
   })
 
   test('Write XML file', async() => {
@@ -61,5 +47,28 @@ describe('Index', () => {
     expect(readFileSync(resolve('./test/sitemap/sitemap.xml')).toString('utf-8')).toEqual(TEMPLATE)
     writeXmlFile(resolve('./test/sitemap/sitemap.xml'), TEMPLATE, resolveOptions({ readable: true }))
     expect(readFileSync(resolve('./test/sitemap/sitemap.xml')).toString('utf-8')).toEqual(format(TEMPLATE))
+  })
+
+  test('Write robot file', async() => {
+    writeRobotFile(resolve('./test/sitemap/robot.txt'), resolveOptions({}))
+    expect(readFileSync(resolve('./test/sitemap/robot.txt')).toString('utf-8')).toEqual(
+      'User-agent: * \nAllow /\n\nSitemap: http://localhost/sitemap.xml',
+    )
+    writeRobotFile(resolve('./test/sitemap/robot.txt'), resolveOptions({ allowRobots: false }))
+    expect(readFileSync(resolve('./test/sitemap/robot.txt')).toString('utf-8')).toEqual(
+      'User-agent: * \nDisallow /\n\nSitemap: http://localhost/sitemap.xml',
+    )
+  })
+
+  test('Get final sitemap path', async() => {
+    expect(getFinalSitemapPath(resolveOptions({}))).toEqual(
+      'http://localhost/sitemap.xml',
+    )
+    expect(getFinalSitemapPath(resolveOptions({
+      hostname: 'http://test.com/',
+      filename: 'test.xml',
+    }))).toEqual(
+      'http://test.com/test.xml',
+    )
   })
 })

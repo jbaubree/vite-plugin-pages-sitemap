@@ -47,6 +47,11 @@ interface Options {
    * @default false
    */
   nuxtStyle: boolean
+  /**
+   * Allow robots crawl (in robot.txt file)
+   * @default true
+   */
+  allowRobots: boolean
 }
 
 export type UserOptions = Partial<Options>

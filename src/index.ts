@@ -10,9 +10,10 @@ import type { ResolvedOptions, UserOptions } from './types'
 
 export default function generateSitemap(options: UserOptions) {
   const resolvedOptions: ResolvedOptions = resolveOptions(options)
-  const RESOLVED_PATH = getResolvedPath(resolvedOptions)
+  const RESOLVED_PATH = getResolvedPath(resolvedOptions.filename, '.xml', resolvedOptions.dest)
+  const RESOLVED_ROBOT_PATH = getResolvedPath('robot', '.txt', resolvedOptions.dest)
   if (!resolvedOptions.routes.length) return
-  if (!existsSync(getDestPath(resolvedOptions))) mkdirSync(getDestPath(resolvedOptions))
+  if (!existsSync(getDestPath(resolvedOptions.dest))) mkdirSync(getDestPath(resolvedOptions.dest))
 
   const stream = new SitemapStream()
   getSitemapLinks(resolvedOptions).forEach(item => stream.write(item))
@@ -20,6 +21,7 @@ export default function generateSitemap(options: UserOptions) {
     writeXmlFile(RESOLVED_PATH, sitemap.toString('utf-8'), resolvedOptions)
   })
   stream.end()
+  writeRobotFile(RESOLVED_ROBOT_PATH, resolvedOptions)
 }
 
 export function getSitemapLinks(options: ResolvedOptions) {
@@ -35,16 +37,26 @@ export function getSitemapLinks(options: ResolvedOptions) {
     }))
 }
 
-export function getDestPath(sitemap: ResolvedOptions) {
-  return ensurePrefix('./', sitemap.dest)
+export function getDestPath(dest: string) {
+  return ensurePrefix('./', dest)
 }
 
-export function getResolvedPath(sitemap: ResolvedOptions) {
-  const SITEMAP_EXTENSION = '.xml'
-  const filenameWithExtension = ensureSuffix(SITEMAP_EXTENSION, sitemap.filename)
-  return resolve(`${getDestPath(sitemap)}/${filenameWithExtension}`)
+export function getResolvedPath(filename: string, extension: string, dest: string) {
+  const filenameWithExtension = ensureSuffix(extension, filename)
+  return resolve(`${getDestPath(dest)}/${filenameWithExtension}`)
 }
 
-export function writeXmlFile(resolvedPath: string, str: string, resolvedOptions: ResolvedOptions) {
-  writeFileSync(resolvedPath, resolvedOptions.readable ? format(str) : str)
+export function writeXmlFile(resolvedPath: string, str: string, options: ResolvedOptions) {
+  writeFileSync(resolvedPath, options.readable ? format(str) : str)
+}
+
+export function writeRobotFile(resolvedPath: string, options: ResolvedOptions) {
+  const str = 'User-agent: * \n'
+    .concat(`${options.allowRobots ? 'Allow' : 'Disallow'} /\n\n`)
+    .concat(`Sitemap: ${getFinalSitemapPath(options)}`)
+  writeFileSync(resolvedPath, str)
+}
+
+export function getFinalSitemapPath(options: ResolvedOptions) {
+  return `${ensureSuffix('/', options.hostname)}${ensureSuffix('.xml', options.filename)}`
 }
