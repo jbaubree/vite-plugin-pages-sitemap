@@ -105,6 +105,13 @@ Converts XML into a human readable format
 
 Is Nuxt.js style route naming.
 
+### allowRobots
+
+- **Type:** `boolean`
+- **Default:** `true`
+
+Allow robots crawl (in robot.txt file).
+
 ## License
 
 MIT License © 2022 [jbaubree](https://github.com/jbaubree)
