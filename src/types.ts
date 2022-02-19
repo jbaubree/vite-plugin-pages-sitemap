@@ -48,7 +48,7 @@ interface Options {
    */
   nuxtStyle: boolean
   /**
-   * Allow robots crawl (in robot.txt file)
+   * Allow robots crawl (in robots.txt file)
    * @default true
    */
   allowRobots: boolean

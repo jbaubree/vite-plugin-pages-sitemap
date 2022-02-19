@@ -110,7 +110,7 @@ Is Nuxt.js style route naming.
 - **Type:** `boolean`
 - **Default:** `true`
 
-Allow robots crawl (in robot.txt file).
+Allow robots crawl (in robots.txt file).
 
 ## License
 

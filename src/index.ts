@@ -11,7 +11,7 @@ import type { ResolvedOptions, UserOptions } from './types'
 export default function generateSitemap(options: UserOptions) {
   const resolvedOptions: ResolvedOptions = resolveOptions(options)
   const RESOLVED_PATH = getResolvedPath(resolvedOptions.filename, '.xml', resolvedOptions.dest)
-  const RESOLVED_ROBOT_PATH = getResolvedPath('robot', '.txt', resolvedOptions.dest)
+  const RESOLVED_ROBOT_PATH = getResolvedPath('robots', '.txt', resolvedOptions.dest)
   if (!resolvedOptions.routes.length) return
   if (!existsSync(getDestPath(resolvedOptions.dest))) mkdirSync(getDestPath(resolvedOptions.dest))
 
