@@ -28,7 +28,7 @@ export function getSitemapLinks(options: ResolvedOptions) {
   const hostname = options.hostname
 
   return [...options.routes.values()]
-    .filter(pageRoute => !isDynamicRoute(pageRoute.component as string, options.nuxtStyle))
+    .filter(pageRoute => !isDynamicRoute(pageRoute.component as string | undefined, options.nuxtStyle))
     .map(pageRoute => ({
       url: removeMaybeSuffix('/', hostname) + pageRoute.path,
       changefreq: options.changefreq,

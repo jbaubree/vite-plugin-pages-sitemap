@@ -6,6 +6,7 @@ describe('Utils', () => {
     expect(isDynamicRoute('/path/[id]', false)).toBe(true)
     expect(isDynamicRoute('/path/_id', true)).toBe(true)
     expect(isDynamicRoute('/path/me', false)).toBe(false)
+    expect(isDynamicRoute(undefined, false)).toBe(false)
   })
 
   test('Ensure suffix', () => {

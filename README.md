@@ -40,7 +40,28 @@ export default {
 };
 ```
 
-> ⚠️ Dynamic routes will not be generated! 
+### Dynamic routes
+
+To generate dynamic routes, you can add them manually:
+
+```js
+export default {
+  plugins: [
+    // ...
+    Pages({
+      onRoutesGenerated: async(routes) => {
+        const users = await api.get('/users')
+        const dynamicRoutes = users.map(user => ({
+          path: `/hi/${user.name}`,
+        }))
+        generateSitemap(routes: [...routes, ...dynamicRoutes])
+      },
+    }),
+  ],
+};
+```
+
+You can find a working example in example folder.
 
 ### hostname
 
