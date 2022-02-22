@@ -11,23 +11,35 @@ describe('Index', () => {
     expect(getSitemapLinks(resolveOptions({}))).toEqual([])
     expect(getSitemapLinks(resolveOptions({
       routes: ['/route'],
-    }))).toEqual([{
-      url: 'http://localhost/route',
-      changefreq: 'daily',
-      priority: 1,
-      lastmod: new Date(),
-    }])
+    }))).toMatchInlineSnapshot([{
+      lastmod: expect.any(Date),
+    }], `
+      [
+        {
+          "changefreq": "daily",
+          "lastmod": Any<Date>,
+          "priority": 1,
+          "url": "http://localhost/route",
+        },
+      ]
+    `)
     expect(getSitemapLinks(resolveOptions({
       routes: [{
         path: '/route',
         component: '/src/pages/route/index.vue',
       }],
-    }))).toEqual([{
-      url: 'http://localhost/route',
-      changefreq: 'daily',
-      priority: 1,
-      lastmod: new Date(),
-    }])
+    }))).toMatchInlineSnapshot([{
+      lastmod: expect.any(Date),
+    }], `
+      [
+        {
+          "changefreq": "daily",
+          "lastmod": Any<Date>,
+          "priority": 1,
+          "url": "http://localhost/route",
+        },
+      ]
+    `)
     expect(getSitemapLinks(resolveOptions({
       routes: [{
         path: '/route/:id',
