@@ -89,11 +89,11 @@ describe('Index', () => {
   test('Write robots file', async() => {
     writeRobotFile(resolve('./test/sitemap/robots.txt'), resolveOptions({}))
     expect(readFileSync(resolve('./test/sitemap/robots.txt')).toString('utf-8')).toEqual(
-      'User-agent: * \nAllow: /\n\nSitemap: http://localhost/sitemap.xml',
+      'User-agent: *\nAllow: /\n\nSitemap: http://localhost/sitemap.xml',
     )
     writeRobotFile(resolve('./test/sitemap/robots.txt'), resolveOptions({ allowRobots: false }))
     expect(readFileSync(resolve('./test/sitemap/robots.txt')).toString('utf-8')).toEqual(
-      'User-agent: * \nDisallow: /\n\nSitemap: http://localhost/sitemap.xml',
+      'User-agent: *\nDisallow: /\n\nSitemap: http://localhost/sitemap.xml',
     )
   })
 
