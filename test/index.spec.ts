@@ -9,6 +9,31 @@ import { resolveOptions } from '../src/options'
 describe('Index', () => {
   test('Get sitemap links', async() => {
     expect(getSitemapLinks(resolveOptions({}))).toEqual([])
+    expect(getSitemapLinks(resolveOptions({
+      routes: ['/route'],
+    }))).toEqual([{
+      url: 'http://localhost/route',
+      changefreq: 'daily',
+      priority: 1,
+      lastmod: new Date(),
+    }])
+    expect(getSitemapLinks(resolveOptions({
+      routes: [{
+        path: '/route',
+        component: '/src/pages/route/index.vue',
+      }],
+    }))).toEqual([{
+      url: 'http://localhost/route',
+      changefreq: 'daily',
+      priority: 1,
+      lastmod: new Date(),
+    }])
+    expect(getSitemapLinks(resolveOptions({
+      routes: [{
+        path: '/route/:id',
+        component: '/src/pages/route/[id].vue',
+      }],
+    }))).toEqual([])
   })
 
   test('Get dest path', async() => {

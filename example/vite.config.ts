@@ -10,9 +10,7 @@ const config = defineConfig({
     Pages({
       onRoutesGenerated: async(routes) => {
         const names = await getNames()
-        const dynamicRoutes = names.map(name => ({
-          path: `/hi/${name}`,
-        }))
+        const dynamicRoutes = names.map(name => `/names/${name}`)
         generateSitemap({
           hostname: 'https://mywebsite.com/',
           routes: [...routes, ...dynamicRoutes],
