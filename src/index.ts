@@ -50,7 +50,7 @@ export function writeXmlFile(resolvedPath: string, str: string, options: Resolve
 }
 
 export function writeRobotFile(resolvedPath: string, options: ResolvedOptions) {
-  const str = 'User-agent: * \n'
+  const str = 'User-agent: *\n'
     .concat(`${options.allowRobots ? 'Allow' : 'Disallow'}: /\n\n`)
     .concat(`Sitemap: ${getFinalSitemapPath(options)}`)
   writeFileSync(resolvedPath, str)
