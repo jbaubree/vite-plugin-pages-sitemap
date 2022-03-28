@@ -26,7 +26,8 @@ export default function generateSitemap(options: UserOptions) {
 
 export function getSitemapLinks(options: ResolvedOptions) {
   const hostname = options.hostname
-  return [...options.routes.values()]
+  const routes = flatRoutes([...options.routes.values()])
+  return routes
     .filter(pageRoute => !isDynamicRoute(pageRoute.component as string, options.nuxtStyle) || typeof pageRoute === 'string')
     .map(pageRoute => ({
       url: `${removeMaybeSuffix('/', hostname)}${typeof pageRoute === 'string' ? pageRoute : pageRoute.path}`,
@@ -34,6 +35,40 @@ export function getSitemapLinks(options: ResolvedOptions) {
       priority: options.priority,
       lastmod: options.lastmod,
     }))
+}
+
+export function flatRoutes(routes: any[]) {
+  const flatRoutes: Set<{ component?: string; path: string }> = new Set()
+
+  const getFlatRoutes = (routes: any[], prefix = '') => {
+    prefix = prefix.replace(/\/$/g, '')
+    for (const route of routes) {
+      if (typeof route === 'string') {
+        flatRoutes.add({
+          component: undefined,
+          path: route,
+        })
+      }
+      else {
+        let path = route.path
+        if (route.path) {
+          path = prefix && !route.path.startsWith('/')
+            ? `${prefix}/${route.path}`
+            : route.path
+
+          flatRoutes.add({
+            component: route.component,
+            path,
+          })
+        }
+        if (Array.isArray(route.children))
+          getFlatRoutes(route.children, path)
+      }
+    }
+  }
+
+  getFlatRoutes(routes)
+  return [...flatRoutes]
 }
 
 export function getDestPath(dest: string) {

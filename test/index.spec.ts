@@ -42,6 +42,35 @@ describe('Index', () => {
     `)
     expect(getSitemapLinks(resolveOptions({
       routes: [{
+        path: '/route',
+        component: '/src/pages/route/index.vue',
+        children: [{
+          path: 'nested',
+          component: '/src/pages/route/nested/index.vue',
+        }],
+      }],
+    }))).toMatchInlineSnapshot([{
+      lastmod: expect.any(Date),
+    }, {
+      lastmod: expect.any(Date),
+    }], `
+      [
+        {
+          "changefreq": "daily",
+          "lastmod": Any<Date>,
+          "priority": 1,
+          "url": "http://localhost/route",
+        },
+        {
+          "changefreq": "daily",
+          "lastmod": Any<Date>,
+          "priority": 1,
+          "url": "http://localhost/route/nested",
+        },
+      ]
+    `)
+    expect(getSitemapLinks(resolveOptions({
+      routes: [{
         path: '/route/:id',
         component: '/src/pages/route/[id].vue',
       }],
