@@ -39,29 +39,6 @@ jobs:
       - name: Run test
         run: pnpm test
 
-      - if: ${{ matrix.node == 14 && matrix.os == 'ubuntu-latest' }}
-        name: Get Coverage for badge
-        run: |
-          SUMMARY="$(pnpm test | tail -2 | head -1)"
-          TOKENS=($SUMMARY)
-          echo "COVERAGE=$(echo ${TOKENS[2]})" >> $GITHUB_ENV
-          REF=${{ github.ref }}
-          echo "github.ref: $REF"
-          IFS='/' read -ra PATHS <<< "$REF"
-          BRANCH_NAME="${PATHS[1]}_${PATHS[2]}"
-          echo $BRANCH_NAME
-          echo "BRANCH=$(echo ${BRANCH_NAME})" >> $GITHUB_ENV
-      - if: ${{ matrix.node == 14 && matrix.os == 'ubuntu-latest' }}
-        name: Create badge
-        uses: schneegans/dynamic-badges-action@v1.0.0
-        with:
-          auth: ${{ secrets.GIST_SECRET }}
-          gistID: c7b3044dcd6c4203f33a3b93ca236ce1
-          filename: vite-plugin-pages-sitemap__${{ env.BRANCH }}.json
-          label: Test Coverage
-          message: ${{ env.COVERAGE }}
-          color: green
-
   lint:
     runs-on: ubuntu-latest
     name: "Lint: node-16, ubuntu-latest"

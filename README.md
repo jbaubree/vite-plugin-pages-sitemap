@@ -3,10 +3,7 @@
 [![npm version](https://badgen.net/npm/v/vite-plugin-pages-sitemap)](https://www.npmjs.com/package/vite-plugin-pages-sitemap)
 [![monthly downloads](https://badgen.net/npm/dm/vite-plugin-pages-sitemap)](https://www.npmjs.com/package/vite-plugin-pages-sitemap)
 [![types](https://badgen.net/npm/types/vite-plugin-pages)](https://github.com/jbaubree/vite-plugin-pages-sitemap/blob/main/src/types.ts)
-[![Coverage Badge](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/jbaubree/c7b3044dcd6c4203f33a3b93ca236ce1/raw/50691ecd5172277c1d3020224856b24883d44bb3/vite-plugin-pages-sitemap__heads_main.json)](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/jbaubree/c7b3044dcd6c4203f33a3b93ca236ce1/raw/50691ecd5172277c1d3020224856b24883d44bb3/vite-plugin-pages-sitemap__heads_main.json)
 [![license](https://badgen.net/npm/license/vite-plugin-pages)](https://github.com/jbaubree/vite-plugin-pages-sitemap/blob/main/LICENSE)
-
-[![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/jbaubree/vite-plugin-pages-sitemap)
 
 > vite-plugin-pages based sitemap generator
 
