@@ -12,8 +12,10 @@ export default function generateSitemap(options: UserOptions) {
   const resolvedOptions: ResolvedOptions = resolveOptions(options)
   const RESOLVED_PATH = getResolvedPath(resolvedOptions.filename, '.xml', resolvedOptions.dest)
   const RESOLVED_ROBOT_PATH = getResolvedPath('robots', '.txt', resolvedOptions.dest)
-  if (!resolvedOptions.routes.length) return
-  if (!existsSync(getDestPath(resolvedOptions.dest))) mkdirSync(getDestPath(resolvedOptions.dest))
+  if (!resolvedOptions.routes.length)
+    return
+  if (!existsSync(getDestPath(resolvedOptions.dest)))
+    mkdirSync(getDestPath(resolvedOptions.dest))
 
   const stream = new SitemapStream()
   getSitemapLinks(resolvedOptions).forEach(item => stream.write(item))

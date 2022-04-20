@@ -3,5 +3,6 @@ import { beforeAll } from 'vitest'
 import { getDestPath } from '../src'
 
 beforeAll(() => {
-  if (existsSync(getDestPath('test/sitemap'))) rmSync(getDestPath('test/sitemap'), { recursive: true, force: true })
+  if (existsSync(getDestPath('test/sitemap')))
+    rmSync(getDestPath('test/sitemap'), { recursive: true, force: true })
 })
