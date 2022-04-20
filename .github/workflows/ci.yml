@@ -53,7 +53,7 @@ jobs:
           echo "BRANCH=$(echo ${BRANCH_NAME})" >> $GITHUB_ENV
       - if: ${{ matrix.node == 14 && matrix.os == 'ubuntu-latest' }}
         name: Create badge
-        uses: schneegans/dynamic-badges-action@v1.0.0
+        uses: schneegans/dynamic-badges-action@v1.3.0
         with:
           auth: ${{ secrets.GIST_SECRET }}
           gistID: c7b3044dcd6c4203f33a3b93ca236ce1
