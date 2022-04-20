@@ -3,7 +3,7 @@ name: CI
 on:
   push:
     branches:
-      - master
+      - main
   pull_request:
 
 jobs:
@@ -57,7 +57,7 @@ jobs:
         with:
           auth: ${{ secrets.GIST_SECRET }}
           gistID: c7b3044dcd6c4203f33a3b93ca236ce1
-          filename: site-plugin-pages-sitemap__${{ env.BRANCH }}.json
+          filename: vite-plugin-pages-sitemap__${{ env.BRANCH }}.json
           label: Test Coverage
           message: ${{ env.COVERAGE }}
           color: green
