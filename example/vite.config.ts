@@ -8,7 +8,7 @@ const config = defineConfig({
   plugins: [
     Vue(),
     Pages({
-      onRoutesGenerated: async(routes) => {
+      onRoutesGenerated: async (routes) => {
         const names = await getNames()
         const dynamicRoutes = names.map(name => `/names/${name}`)
         generateSitemap({
