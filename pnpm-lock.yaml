@@ -5,7 +5,7 @@ importers:
   .:
     specifiers:
       '@antfu/eslint-config': 0.23.0
-      '@antfu/utils': 0.5.1
+      '@antfu/utils': 0.5.2
       '@types/node': 17.0.25
       c8: 7.11.2
       eslint: 8.15.0
@@ -17,7 +17,7 @@ importers:
       xml-formatter: 2.6.1
     devDependencies:
       '@antfu/eslint-config': 0.23.0_hcfsmds2fshutdssjqluwm76uu
-      '@antfu/utils': 0.5.1
+      '@antfu/utils': 0.5.2
       '@types/node': 17.0.25
       c8: 7.11.2
       eslint: 8.15.0
@@ -154,8 +154,8 @@ packages:
       - typescript
     dev: true
 
-  /@antfu/utils/0.5.1:
-    resolution: {integrity: sha512-8Afo0+xvYe1K8Wm4xHTymfTkpzy36aaqDvhXIayUwl+mecMG9Xzl3XjXa6swG6Bk8FBeQ646RyvmsYt6+2Be9g==}
+  /@antfu/utils/0.5.2:
+    resolution: {integrity: sha512-CQkeV+oJxUazwjlHD0/3ZD08QWKuGQkhnrKo3e6ly5pd48VUpXbb77q0xMU4+vc2CkJnDS02Eq/M9ugyX20XZA==}
     dev: true
 
   /@babel/code-frame/7.16.7:
