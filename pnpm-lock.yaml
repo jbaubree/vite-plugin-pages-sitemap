@@ -10,7 +10,7 @@ importers:
       c8: 7.11.3
       eslint: 8.16.0
       sitemap: 7.1.1
-      tsup: 5.12.9
+      tsup: 6.0.1
       typescript: 4.7.2
       vite: 2.9.9
       vitest: 0.13.0
@@ -22,7 +22,7 @@ importers:
       c8: 7.11.3
       eslint: 8.16.0
       sitemap: 7.1.1
-      tsup: 5.12.9_typescript@4.7.2
+      tsup: 6.0.1_typescript@4.7.2
       typescript: 4.7.2
       vite: 2.9.9
       vitest: 0.13.0_c8@7.11.3
@@ -3539,8 +3539,9 @@ packages:
     resolution: {integrity: sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==}
     dev: true
 
-  /tsup/5.12.9_typescript@4.7.2:
-    resolution: {integrity: sha512-dUpuouWZYe40lLufo64qEhDpIDsWhRbr2expv5dHEMjwqeKJS2aXA/FPqs1dxO4T6mBojo7rvo3jP9NNzaKyDg==}
+  /tsup/6.0.1_typescript@4.7.2:
+    resolution: {integrity: sha512-2Pl1YkEEvzfg4aYgwUILaHV0wwZQKO7mNHMQChyzdCNlQqf11eug7gWk86XCb3CvRofCXBX87x73BTGjyS3cOQ==}
+    engines: {node: '>=14'}
     hasBin: true
     peerDependencies:
       '@swc/core': ^1
