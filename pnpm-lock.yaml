@@ -10,7 +10,7 @@ importers:
       c8: 7.11.3
       eslint: 8.17.0
       sitemap: 7.1.1
-      tsup: 6.0.1
+      tsup: 6.1.0
       typescript: 4.7.3
       vite: 2.9.9
       vitest: 0.14.0
@@ -22,7 +22,7 @@ importers:
       c8: 7.11.3
       eslint: 8.17.0
       sitemap: 7.1.1
-      tsup: 6.0.1_typescript@4.7.3
+      tsup: 6.1.0_typescript@4.7.3
       typescript: 4.7.3
       vite: 2.9.9
       vitest: 0.14.0_c8@7.11.3
@@ -2571,7 +2571,7 @@ packages:
     dev: true
 
   /lodash.sortby/4.7.0:
-    resolution: {integrity: sha1-7dFMgk4sycHgsKG0K7UhBRakJDg=}
+    resolution: {integrity: sha512-HDWXG8isMntAyRF5vZ7xKuEvOhT4AhlRt/3czTSjvGUxjYCBVRQY48ViDHyfYz9VIoBkW4TMGQNapx+l3RUwdA==}
     dev: true
 
   /lodash/4.17.21:
@@ -2970,7 +2970,7 @@ packages:
     dev: true
 
   /path-is-absolute/1.0.1:
-    resolution: {integrity: sha1-F0uSaHNVNP+8es5r9TpanhtcX18=}
+    resolution: {integrity: sha512-AVbw3UJ2e9bq64vSaS9Am0fje1Pa8pbGqTTsmXfaIiMpnr5DlDhfJOuLj9Sf95ZPVDAUerDfEk88MPmPe7UCQg==}
     engines: {node: '>=0.10.0'}
     dev: true
 
@@ -3539,8 +3539,8 @@ packages:
     resolution: {integrity: sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==}
     dev: true
 
-  /tsup/6.0.1_typescript@4.7.3:
-    resolution: {integrity: sha512-2Pl1YkEEvzfg4aYgwUILaHV0wwZQKO7mNHMQChyzdCNlQqf11eug7gWk86XCb3CvRofCXBX87x73BTGjyS3cOQ==}
+  /tsup/6.1.0_typescript@4.7.3:
+    resolution: {integrity: sha512-kKSzFbX996OXkbQif23LV0xDDvxnhH95Hw39ku7Kx1NEfJxcxvqexGGEDgRyd5dlzIJI4U8mySfPeq5iExYwnw==}
     engines: {node: '>=14'}
     hasBin: true
     peerDependencies:
