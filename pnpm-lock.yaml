@@ -38,10 +38,10 @@ importers:
       vite-plugin-pages: 0.23.0
       vite-plugin-pages-sitemap: workspace:*
       vue: 3.2.37
-      vue-router: 4.0.15
+      vue-router: 4.0.16
     dependencies:
       vue: 3.2.37
-      vue-router: 4.0.15_vue@3.2.37
+      vue-router: 4.0.16_vue@3.2.37
     devDependencies:
       '@vitejs/plugin-vue': 2.3.3_vite@2.9.10+vue@3.2.37
       cross-env: 7.0.3
@@ -3798,8 +3798,8 @@ packages:
       - supports-color
     dev: true
 
-  /vue-router/4.0.15_vue@3.2.37:
-    resolution: {integrity: sha512-xa+pIN9ZqORdIW1MkN2+d9Ui2pCM1b/UMgwYUCZOiFYHAvz/slKKBDha8DLrh5aCG/RibtrpyhKjKOZ85tYyWg==}
+  /vue-router/4.0.16_vue@3.2.37:
+    resolution: {integrity: sha512-JcO7cb8QJLBWE+DfxGUL3xUDOae/8nhM1KVdnudadTAORbuxIC/xAydC5Zr/VLHUDQi1ppuTF5/rjBGzgzrJNA==}
     peerDependencies:
       vue: ^3.2.0
     dependencies:
