@@ -14,7 +14,7 @@
     "nodemon": "2.0.18",
     "typescript": "4.7.4",
     "vite": "2.9.13",
-    "vite-plugin-pages": "0.24.3",
+    "vite-plugin-pages": "0.25.0",
     "vite-plugin-pages-sitemap": "workspace:*"
   }
 }
