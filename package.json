@@ -19,7 +19,7 @@
     "test": "vitest --coverage"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "0.26.3",
+    "@antfu/eslint-config": "0.27.0",
     "@antfu/utils": "0.5.2",
     "@types/node": "18.0.6",
     "c8": "7.12.0",
