@@ -11,6 +11,7 @@ describe('Options', () => {
         "allowRobots": true,
         "changefreq": "daily",
         "dest": "public",
+        "exclude": [],
         "filename": "sitemap",
         "hostname": "http://localhost/",
         "lastmod": Any<Date>,

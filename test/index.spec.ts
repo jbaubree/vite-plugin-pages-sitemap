@@ -24,6 +24,10 @@ describe('Index', () => {
       ]
     `)
     expect(getSitemapLinks(resolveOptions({
+      routes: ['/route'],
+      exclude: ['/route'],
+    }))).toMatchInlineSnapshot([])
+    expect(getSitemapLinks(resolveOptions({
       routes: [{
         path: '/route',
         component: '/src/pages/route/index.vue',

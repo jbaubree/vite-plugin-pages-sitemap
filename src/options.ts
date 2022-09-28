@@ -5,6 +5,7 @@ export function resolveOptions(userOptions: UserOptions): ResolvedOptions {
     {
       hostname: 'http://localhost/',
       routes: [],
+      exclude: [],
       filename: 'sitemap',
       dest: 'public',
       changefreq: 'daily',

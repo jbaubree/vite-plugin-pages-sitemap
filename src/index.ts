@@ -31,6 +31,7 @@ export function getSitemapLinks(options: ResolvedOptions) {
   const routes = flatRoutes([...options.routes.values()])
   return routes
     .filter(pageRoute => !isDynamicRoute(pageRoute.component as string, options.nuxtStyle) || typeof pageRoute === 'string')
+    .filter(pageRoute => !options.exclude.includes(pageRoute.path))
     .map(pageRoute => ({
       url: `${removeMaybeSuffix('/', hostname)}${typeof pageRoute === 'string' ? pageRoute : pageRoute.path}`,
       changefreq: options.changefreq,

@@ -13,6 +13,11 @@ interface Options {
    */
   routes: any[]
   /**
+   * Excluded routes paths
+   * @default []
+   */
+  exclude: string[]
+  /**
    * File name
    * @default 'sitemap'
    */

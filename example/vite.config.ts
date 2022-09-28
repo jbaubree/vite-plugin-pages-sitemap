@@ -15,6 +15,7 @@ const config = defineConfig({
           hostname: 'https://mywebsite.com/',
           routes: [...routes, ...dynamicRoutes],
           readable: true,
+          exclude: ['/private'],
         })
       },
     }),
