@@ -26,7 +26,9 @@ describe('Index', () => {
     expect(getSitemapLinks(resolveOptions({
       routes: ['/route'],
       exclude: ['/route'],
-    }))).toMatchInlineSnapshot([])
+    }))).toMatchInlineSnapshot([], `
+      []
+    `)
     expect(getSitemapLinks(resolveOptions({
       routes: [{
         path: '/route',
