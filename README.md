@@ -46,7 +46,7 @@ export default {
   plugins: [
     // ...
     Pages({
-      onRoutesGenerated: async(routes) => {
+      onRoutesGenerated: async (routes) => {
         const users = await api.get('/users')
         const dynamicRoutes = users.map(user => `/users/${user.name}`)
         generateSitemap({ routes: [...routes, ...dynamicRoutes] })
@@ -71,6 +71,13 @@ Base URI.
 - **Default:** `[]`
 
 Generated routes from vite-plugin-pages or/and strings as paths (ex: ['/user/1', '/user/2']) for manual dynamic routes.
+
+### exclude
+
+- **Type:** `string[]`
+- **Default:** `[]`
+
+Excluded routes for sitemap.
 
 ### filename
 
