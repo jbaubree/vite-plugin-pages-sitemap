@@ -22,7 +22,7 @@
     "@antfu/eslint-config": "0.27.0",
     "@antfu/utils": "0.5.2",
     "@types/node": "18.7.23",
-    "@vitest/coverage-c8": "0.24.0",
+    "@vitest/coverage-c8": "0.24.1",
     "eslint": "8.25.0",
     "sitemap": "7.1.1",
     "tsup": "6.2.3",
