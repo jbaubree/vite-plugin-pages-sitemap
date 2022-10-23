@@ -35,7 +35,7 @@ importers:
       nodemon: 2.0.20
       typescript: 4.8.4
       vite: 3.1.8
-      vite-plugin-pages: 0.27.0
+      vite-plugin-pages: 0.27.1
       vite-plugin-pages-sitemap: workspace:*
       vue: 3.2.41
       vue-router: 4.1.5
@@ -48,7 +48,7 @@ importers:
       nodemon: 2.0.20
       typescript: 4.8.4
       vite: 3.1.8
-      vite-plugin-pages: 0.27.0_vite@3.1.8
+      vite-plugin-pages: 0.27.1_vite@3.1.8
       vite-plugin-pages-sitemap: link:..
 
 packages:
@@ -3287,8 +3287,8 @@ packages:
       spdx-expression-parse: 3.0.1
     dev: true
 
-  /vite-plugin-pages/0.27.0_vite@3.1.8:
-    resolution: {integrity: sha512-fLuBd8U9jcfB+MXj9yEsq6AHa0AHCP4Fhi7LCcCWJeL28Lx3o5B0uoBUhCZ+xwsnNs4GZwPOfgBG3yHKMsMNnA==}
+  /vite-plugin-pages/0.27.1_vite@3.1.8:
+    resolution: {integrity: sha512-KXfeG9aQSNsSXBs1mPeeuC0rwkLti+MgoJ3GknrwRDNrdrojb9czcFAVlnoPNVdfuvTHcWdf5zqN7+vuvz2JZQ==}
     peerDependencies:
       '@vue/compiler-sfc': ^2.7.0 || ^3.0.0
       vite: ^2.0.0 || ^3.0.0-0
