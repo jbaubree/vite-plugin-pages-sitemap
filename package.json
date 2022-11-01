@@ -20,7 +20,7 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "0.29.2",
-    "@antfu/utils": "0.6.1",
+    "@antfu/utils": "0.6.2",
     "@types/node": "18.11.8",
     "@vitest/coverage-c8": "0.24.4",
     "eslint": "8.26.0",
