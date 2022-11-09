@@ -5,7 +5,7 @@
     "serve": "vite preview"
   },
   "dependencies": {
-    "vue": "3.2.42",
+    "vue": "3.2.43",
     "vue-router": "4.1.6"
   },
   "devDependencies": {
