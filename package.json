@@ -21,7 +21,7 @@
   "devDependencies": {
     "@antfu/eslint-config": "0.33.1",
     "@antfu/utils": "0.7.2",
-    "@types/node": "18.11.9",
+    "@types/node": "18.11.10",
     "@vitest/coverage-c8": "0.25.3",
     "eslint": "8.28.0",
     "sitemap": "7.1.1",
