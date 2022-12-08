@@ -22,13 +22,13 @@
     "@antfu/eslint-config": "0.33.1",
     "@antfu/utils": "0.7.2",
     "@types/node": "18.11.11",
-    "@vitest/coverage-c8": "0.25.5",
+    "@vitest/coverage-c8": "0.25.6",
     "eslint": "8.29.0",
     "sitemap": "7.1.1",
     "tsup": "6.5.0",
     "typescript": "4.9.4",
     "vite": "3.2.5",
-    "vitest": "0.25.5",
+    "vitest": "0.25.6",
     "xml-formatter": "2.6.1"
   }
 }
