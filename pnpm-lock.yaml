@@ -6,7 +6,7 @@ importers:
     specifiers:
       '@antfu/eslint-config': 0.33.1
       '@antfu/utils': 0.7.2
-      '@types/node': 18.11.12
+      '@types/node': 18.11.13
       '@vitest/coverage-c8': 0.25.6
       eslint: 8.29.0
       sitemap: 7.1.1
@@ -18,13 +18,13 @@ importers:
     devDependencies:
       '@antfu/eslint-config': 0.33.1_ha6vam6werchizxrnqvarmz2zu
       '@antfu/utils': 0.7.2
-      '@types/node': 18.11.12
+      '@types/node': 18.11.13
       '@vitest/coverage-c8': 0.25.6
       eslint: 8.29.0
       sitemap: 7.1.1
       tsup: 6.5.0_typescript@4.9.4
       typescript: 4.9.4
-      vite: 3.2.5_@types+node@18.11.12
+      vite: 3.2.5_@types+node@18.11.13
       vitest: 0.25.6
       xml-formatter: 2.6.1
 
@@ -333,8 +333,8 @@ packages:
     resolution: {integrity: sha512-wANk6fBrUwdpY4isjWrKTufkrXdu1D2YHCot2fD/DfWxF5sMrVSA+KN7ydckvaTCh0HiqX9IVl0L5/ZoXg5M7w==}
     dev: true
 
-  /@types/node/18.11.12:
-    resolution: {integrity: sha512-FgD3NtTAKvyMmD44T07zz2fEf+OKwutgBCEVM8GcvMGVGaDktiLNTDvPwC/LUe3PinMW+X6CuLOF2Ui1mAlSXg==}
+  /@types/node/18.11.13:
+    resolution: {integrity: sha512-IASpMGVcWpUsx5xBOrxMj7Bl8lqfuTY7FKAnPmu5cHkfQVWF8GulWS1jbRqA934qZL35xh5xN/+Xe/i26Bod4w==}
     dev: true
 
   /@types/normalize-package-data/2.4.1:
@@ -344,7 +344,7 @@ packages:
   /@types/sax/1.2.4:
     resolution: {integrity: sha512-pSAff4IAxJjfAXUG6tFkO7dsSbTmf8CtUpfhhZ5VhkRpC4628tJhh3+V6H1E+/Gs9piSzYKT5yzHO5M4GG9jkw==}
     dependencies:
-      '@types/node': 18.11.12
+      '@types/node': 18.11.13
     dev: true
 
   /@types/semver/7.3.13:
@@ -3403,7 +3403,7 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vite/3.2.5_@types+node@18.11.12:
+  /vite/3.2.5_@types+node@18.11.13:
     resolution: {integrity: sha512-4mVEpXpSOgrssFZAOmGIr85wPHKvaDAcXqxVxVRZhljkJOMZi1ibLibzjLHzJvcok8BMguLc7g1W6W/GqZbLdQ==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -3428,7 +3428,7 @@ packages:
       terser:
         optional: true
     dependencies:
-      '@types/node': 18.11.12
+      '@types/node': 18.11.13
       esbuild: 0.15.10
       postcss: 8.4.18
       resolve: 1.22.1
@@ -3461,7 +3461,7 @@ packages:
     dependencies:
       '@types/chai': 4.3.3
       '@types/chai-subset': 1.3.3
-      '@types/node': 18.11.12
+      '@types/node': 18.11.13
       acorn: 8.8.1
       acorn-walk: 8.2.0
       chai: 4.3.6
@@ -3472,7 +3472,7 @@ packages:
       tinybench: 2.3.1
       tinypool: 0.3.0
       tinyspy: 1.0.2
-      vite: 3.2.5_@types+node@18.11.12
+      vite: 3.2.5_@types+node@18.11.13
     transitivePeerDependencies:
       - less
       - sass
