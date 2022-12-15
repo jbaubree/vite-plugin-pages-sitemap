@@ -1,6 +1,6 @@
 import { existsSync, rmSync } from 'fs'
 import { beforeAll } from 'vitest'
-import { getDestPath } from '../src'
+import { getDestPath } from '../src/sitemap'
 
 beforeAll(() => {
   if (existsSync(getDestPath('test/sitemap')))

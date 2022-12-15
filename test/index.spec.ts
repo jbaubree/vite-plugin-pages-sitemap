@@ -3,7 +3,8 @@ import { existsSync, readFileSync } from 'fs'
 import { describe, expect, test } from 'vitest'
 import format from 'xml-formatter'
 
-import generateSitemap, { getDestPath, getFinalSitemapPath, getResolvedPath, getSitemapLinks, writeRobotFile, writeXmlFile } from '../src'
+import generateSitemap from '../src'
+import { getDestPath, getFinalSitemapPath, getResolvedPath, getSitemapLinks, writeRobotFile, writeXmlFile } from '../src/sitemap'
 import { resolveOptions } from '../src/options'
 
 describe('Index', () => {
