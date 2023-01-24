@@ -9,7 +9,7 @@ importers:
       '@types/node': 18.11.18
       '@vitest/coverage-c8': 0.28.1
       eslint: 8.32.0
-      pkgroll: 1.8.0
+      pkgroll: 1.8.1
       sitemap: 7.1.1
       typescript: 4.9.4
       vite: 3.2.5
@@ -21,7 +21,7 @@ importers:
       '@types/node': 18.11.18
       '@vitest/coverage-c8': 0.28.1
       eslint: 8.32.0
-      pkgroll: 1.8.0_typescript@4.9.4
+      pkgroll: 1.8.1_typescript@4.9.4
       sitemap: 7.1.1
       typescript: 4.9.4
       vite: 3.2.5_@types+node@18.11.18
@@ -3151,8 +3151,8 @@ packages:
       pathe: 1.1.0
     dev: true
 
-  /pkgroll/1.8.0_typescript@4.9.4:
-    resolution: {integrity: sha512-udmzTqrlFcUxHG+KU+bYZqb1Z/2LFFRGwLg4EuOCe6t52dIFJYrWE7iAqY3/sU9EmwDQqIVoLbxX5NKj1d1h6Q==}
+  /pkgroll/1.8.1_typescript@4.9.4:
+    resolution: {integrity: sha512-IZfG5PPznmdNlERURR4fwDfx11S5HXrbtlQ2K3S7j47EI3pF1NI0teqtY+Pq11tWXogxSiYrRsp3lboEKaCx2g==}
     hasBin: true
     peerDependencies:
       typescript: ^4.1
@@ -3435,6 +3435,7 @@ packages:
 
   /sourcemap-codec/1.4.8:
     resolution: {integrity: sha512-9NykojV5Uih4lgo5So5dtw+f0JgJX30KCNI8gwhz2J9A15wD0Ml6tjHKwf6fTSa6fAdVBdZeNOs9eJ71qCk8vA==}
+    deprecated: Please use @jridgewell/sourcemap-codec instead
 
   /spdx-correct/3.1.1:
     resolution: {integrity: sha512-cOYcUWwhCuHCXi49RhFRCyJEK3iPj1Ziz9DpViV3tbZOwXD49QzIN3MpOLJNxh2qwq2lJJZaKMVw9qNi4jTC0w==}
