@@ -32,7 +32,7 @@ importers:
     specifiers:
       '@vitejs/plugin-vue': 3.2.0
       cross-env: 7.0.3
-      nodemon: 2.0.20
+      nodemon: 2.0.21
       typescript: 4.9.5
       vite: 3.2.5
       vite-plugin-pages: 0.28.0
@@ -45,7 +45,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-vue': 3.2.0_vite@3.2.5+vue@3.2.47
       cross-env: 7.0.3
-      nodemon: 2.0.20
+      nodemon: 2.0.21
       typescript: 4.9.5
       vite: 3.2.5
       vite-plugin-pages: 0.28.0_vite@3.2.5
@@ -2930,8 +2930,8 @@ packages:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
     dev: true
 
-  /nodemon/2.0.20:
-    resolution: {integrity: sha512-Km2mWHKKY5GzRg6i1j5OxOHQtuvVsgskLfigG25yTtbyfRGn/GNvIbRyOf1PSCKJ2aT/58TiuUsuOU5UToVViw==}
+  /nodemon/2.0.21:
+    resolution: {integrity: sha512-djN/n2549DUtY33S7o1djRCd7dEm0kBnj9c7S9XVXqRUbuggN1MZH/Nqa+5RFQr63Fbefq37nFXAE9VU86yL1A==}
     engines: {node: '>=8.10.0'}
     hasBin: true
     dependencies:
