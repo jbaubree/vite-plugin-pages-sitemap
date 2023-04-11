@@ -35,8 +35,8 @@ importers:
         specifier: 0.30.1
         version: 0.30.1
       xml-formatter:
-        specifier: 2.6.1
-        version: 2.6.1
+        specifier: 3.3.2
+        version: 3.3.2
 
   example:
     dependencies:
@@ -4006,11 +4006,11 @@ packages:
     resolution: {integrity: sha512-l4Sp/DRseor9wL6EvV2+TuQn63dMkPjZ/sp9XkghTEbV9KlPS1xUsZ3u7/IQO4wxtcFB4bgpQPRcR3QCvezPcQ==}
     dev: true
 
-  /xml-formatter@2.6.1:
-    resolution: {integrity: sha512-dOiGwoqm8y22QdTNI7A+N03tyVfBlQ0/oehAzxIZtwnFAHGeSlrfjF73YQvzSsa/Kt6+YZasKsrdu6OIpuBggw==}
-    engines: {node: '>= 10'}
+  /xml-formatter@3.3.2:
+    resolution: {integrity: sha512-ld34F1b7+2UQGNkfsAV4MN3/b7cdUstyMj3XJhzKFasOPtMToVCkqmrNcmrRuSlPxgH1K9tXPkqr75gAT3ix2g==}
+    engines: {node: '>= 14'}
     dependencies:
-      xml-parser-xo: 3.2.0
+      xml-parser-xo: 4.0.5
     dev: true
 
   /xml-name-validator@4.0.0:
@@ -4018,9 +4018,9 @@ packages:
     engines: {node: '>=12'}
     dev: true
 
-  /xml-parser-xo@3.2.0:
-    resolution: {integrity: sha512-8LRU6cq+d7mVsoDaMhnkkt3CTtAs4153p49fRo+HIB3I1FD1o5CeXRjRH29sQevIfVJIcPjKSsPU/+Ujhq09Rg==}
-    engines: {node: '>= 10'}
+  /xml-parser-xo@4.0.5:
+    resolution: {integrity: sha512-UWXOHMQ4ySxpUiU3S/9KzPOhninlL8SN1xFfWgX9WjgoZWoLKtEeJIEz4jhKtdFsoZBCYjg9rDEP3qfnpiHagQ==}
+    engines: {node: '>= 14'}
     dev: true
 
   /y18n@5.0.8:
