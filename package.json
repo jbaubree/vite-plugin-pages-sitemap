@@ -19,16 +19,16 @@
     "test": "vitest --coverage"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "0.34.1",
+    "@antfu/eslint-config": "0.38.5",
     "@antfu/utils": "0.7.2",
     "@types/node": "18.16.3",
     "@vitest/coverage-c8": "0.30.1",
     "eslint": "8.39.0",
     "pkgroll": "1.9.0",
     "sitemap": "7.1.1",
-    "typescript": "4.9.5",
-    "vite": "3.2.6",
+    "typescript": "5.0.4",
+    "vite": "4.3.3",
     "vitest": "0.30.1",
-    "xml-formatter": "2.6.1"
+    "xml-formatter": "3.3.2"
   }
 }

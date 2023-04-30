@@ -9,11 +9,11 @@
     "vue-router": "4.1.6"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "3.2.0",
+    "@vitejs/plugin-vue": "4.2.1",
     "cross-env": "7.0.3",
     "nodemon": "2.0.22",
-    "typescript": "4.9.5",
-    "vite": "3.2.6",
+    "typescript": "5.0.4",
+    "vite": "4.3.3",
     "vite-plugin-pages": "0.29.0",
     "vite-plugin-pages-sitemap": "workspace:*"
   }
