@@ -5,7 +5,8 @@ const names = [
   'Dana',
 ]
 
-export const getNames = (): Promise<string[]> =>
-  new Promise((resolve) => {
+export function getNames(): Promise<string[]> {
+  return new Promise((resolve) => {
     setTimeout(() => resolve(names), 250)
   })
+}

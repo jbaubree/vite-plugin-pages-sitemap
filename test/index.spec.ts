@@ -1,5 +1,5 @@
-import { resolve } from 'path'
-import { existsSync, readFileSync } from 'fs'
+import { resolve } from 'node:path'
+import { existsSync, readFileSync } from 'node:fs'
 import { describe, expect, test } from 'vitest'
 import format from 'xml-formatter'
 

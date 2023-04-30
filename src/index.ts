@@ -1,4 +1,4 @@
-import { existsSync, mkdirSync } from 'fs'
+import { existsSync, mkdirSync } from 'node:fs'
 import { SitemapStream, streamToPromise } from 'sitemap'
 
 import { resolveOptions } from './options'

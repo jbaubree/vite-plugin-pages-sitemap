@@ -1,4 +1,4 @@
-import { existsSync, rmSync } from 'fs'
+import { existsSync, rmSync } from 'node:fs'
 import { beforeAll } from 'vitest'
 import { getDestPath } from '../src/sitemap'
 

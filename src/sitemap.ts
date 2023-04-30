@@ -1,5 +1,5 @@
-import { writeFileSync } from 'fs'
-import { resolve } from 'path'
+import { writeFileSync } from 'node:fs'
+import { resolve } from 'node:path'
 import { ensurePrefix } from '@antfu/utils'
 import format from 'xml-formatter'
 
@@ -35,7 +35,7 @@ export function flatRoutes(routes: any[]) {
       else {
         let path = route.path
         if (route.path) {
-          path = prefix && !route.path.startsWith('/')
+          path = (prefix && !route.path.startsWith('/'))
             ? `${prefix}/${route.path}`
             : route.path
 
