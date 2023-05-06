@@ -20,8 +20,8 @@ importers:
         specifier: 8.39.0
         version: 8.39.0
       pkgroll:
-        specifier: 1.9.0
-        version: 1.9.0(typescript@5.0.4)
+        specifier: 1.10.0
+        version: 1.10.0(typescript@5.0.4)
       sitemap:
         specifier: 7.1.1
         version: 7.1.1
@@ -3058,11 +3058,11 @@ packages:
       pathe: 1.1.0
     dev: true
 
-  /pkgroll@1.9.0(typescript@5.0.4):
-    resolution: {integrity: sha512-/DU749mcLLo3NHvCNi87nIIQkzk0nh3ZIq4fRWmgr1V+2UTJRgVCvg/nxn2Hz+Mv4j7CTxutdAOOgmu+wSi5bw==}
+  /pkgroll@1.10.0(typescript@5.0.4):
+    resolution: {integrity: sha512-ZxOcstDncBOBSjXu7zhcldhKaBnKwjb4wZNoSkNmMt/9X5wTYz3wLhL76f1nDy/BKiMK2Xki4GxocYal/bNBag==}
     hasBin: true
     peerDependencies:
-      typescript: ^4.1
+      typescript: ^4.1 || ^5.0
     peerDependenciesMeta:
       typescript:
         optional: true
