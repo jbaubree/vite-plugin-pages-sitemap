@@ -9,7 +9,7 @@
     "vue-router": "4.1.6"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "4.2.1",
+    "@vitejs/plugin-vue": "4.2.2",
     "cross-env": "7.0.3",
     "nodemon": "2.0.22",
     "typescript": "5.0.4",
