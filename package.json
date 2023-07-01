@@ -21,7 +21,7 @@
   "devDependencies": {
     "@antfu/eslint-config": "0.39.6",
     "@antfu/utils": "0.7.4",
-    "@types/node": "18.16.18",
+    "@types/node": "18.16.19",
     "@vitest/coverage-c8": "0.31.4",
     "eslint": "8.43.0",
     "pkgroll": "1.10.0",
