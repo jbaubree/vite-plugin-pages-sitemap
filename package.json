@@ -23,7 +23,7 @@
     "@antfu/utils": "0.7.5",
     "@types/node": "18.16.19",
     "@vitest/coverage-c8": "0.31.4",
-    "eslint": "8.44.0",
+    "eslint": "8.45.0",
     "pkgroll": "1.10.0",
     "sitemap": "7.1.1",
     "typescript": "5.1.6",
