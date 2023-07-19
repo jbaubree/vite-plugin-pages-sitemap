@@ -16,7 +16,7 @@ interface Options {
    * Excluded routes paths
    * @default []
    */
-  exclude: string[]
+  exclude: (string | RegExp)[]
   /**
    * File name
    * @default 'sitemap'
