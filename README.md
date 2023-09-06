@@ -7,6 +7,10 @@
 
 > vite-plugin-pages based sitemap generator
 
+**🚨Important Notes🚨**
+
+You must use [vite-plugin-pages](https://github.com/hannoeru/vite-plugin-pages/) routes generation to use this plugin. If you are not working with vite-plugin-pages, i recommend to use [vite-plugin-sitemap](https://github.com/jbaubree/vite-plugin-sitemap).
+
 ## Getting Started
 
 ### Vue
