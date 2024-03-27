@@ -39,8 +39,8 @@ importers:
         specifier: 0.34.6
         version: 0.34.6
       xml-formatter:
-        specifier: 3.6.0
-        version: 3.6.0
+        specifier: 3.6.2
+        version: 3.6.2
 
   example:
     dependencies:
@@ -3773,8 +3773,8 @@ packages:
     resolution: {integrity: sha512-l4Sp/DRseor9wL6EvV2+TuQn63dMkPjZ/sp9XkghTEbV9KlPS1xUsZ3u7/IQO4wxtcFB4bgpQPRcR3QCvezPcQ==}
     dev: true
 
-  /xml-formatter@3.6.0:
-    resolution: {integrity: sha512-Wic80ENNLF/5mLcc82hVLmoOWQlLDJtVv+N1/hkP4hBuVXPLKrXo92/4V23QYPKfUxvCU6Y2AcdpHCIA/xexFw==}
+  /xml-formatter@3.6.2:
+    resolution: {integrity: sha512-enWhevZNOwffZFUhzl1WMcha8lFLZUgJ7NzFs5Ug4ZOFCoNheGYXz1J9Iz/e+cTn9rCkuT1GwTacz+YlmFHOGw==}
     engines: {node: '>= 14'}
     dependencies:
       xml-parser-xo: 4.1.0
