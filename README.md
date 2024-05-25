@@ -62,6 +62,14 @@ export default {
 
 You can find a working example in example folder.
 
+### i18n
+
+- **Type:** `{ defaultLanguage?: string, languages: string[] }`
+- **Default:** `undefined`
+
+Add i18n support defining alternate links.
+defaultLanguage will use this language with / and languages with /language
+
 ### hostname
 
 - **Type:** `string`
