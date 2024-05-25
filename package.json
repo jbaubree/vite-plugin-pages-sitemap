@@ -27,7 +27,7 @@
     "eslint": "8.57.0",
     "pkgroll": "1.11.1",
     "sitemap": "7.1.1",
-    "typescript": "5.3.3",
+    "typescript": "5.4.5",
     "vite": "4.5.3",
     "vitest": "0.34.6",
     "xml-formatter": "3.6.0"
