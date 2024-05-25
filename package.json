@@ -1,6 +1,7 @@
 {
   "name": "vite-plugin-pages-sitemap",
   "version": "1.7.0",
+  "type": "module",
   "packageManager": "pnpm@9.1.2",
   "description": "vite-plugin-pages based sitemap generator",
   "license": "MIT",
@@ -19,17 +20,20 @@
     "release": "npx bumpp --commit --tag --push && npm publish",
     "test": "vitest --coverage"
   },
+  "dependencies": {
+    "sitemap": "^8.0.0",
+    "xml-formatter": "^3.6.2"
+  },
   "devDependencies": {
-    "@antfu/eslint-config": "0.41.3",
-    "@antfu/utils": "0.7.6",
-    "@types/node": "20.10.5",
-    "@vitest/coverage-v8": "0.34.6",
-    "eslint": "8.57.0",
-    "pkgroll": "1.11.1",
-    "sitemap": "7.1.1",
-    "typescript": "5.3.3",
-    "vite": "4.5.3",
-    "vitest": "0.34.6",
-    "xml-formatter": "3.6.0"
+    "@antfu/eslint-config": "^2.18.1",
+    "@antfu/utils": "^0.7.8",
+    "@types/node": "^20.12.12",
+    "@vitest/coverage-v8": "^1.6.0",
+    "eslint": "^9.3.0",
+    "eslint-plugin-format": "^0.1.1",
+    "pkgroll": "^2.1.1",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.11",
+    "vitest": "^1.6.0"
   }
 }

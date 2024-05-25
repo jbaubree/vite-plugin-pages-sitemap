@@ -1,8 +1,8 @@
-import { describe, expect, test } from 'vitest'
+import { describe, expect, it } from 'vitest'
 import { resolveOptions } from '../src/options'
 
-describe('Options', () => {
-  test('resolve options', () => {
+describe('options', () => {
+  it('resolve options', () => {
     const options = resolveOptions({})
     expect(options).toMatchInlineSnapshot({
       lastmod: expect.any(Date),

@@ -33,7 +33,7 @@ export function getSitemapLinks(options: ResolvedOptions) {
 }
 
 export function flatRoutes(routes: any[]) {
-  const flatRoutes: Set<{ component?: string; path: string }> = new Set()
+  const flatRoutes: Set<{ component?: string, path: string }> = new Set()
 
   const getFlatRoutes = (routes: any[], prefix = '') => {
     prefix = prefix.replace(/\/$/g, '')
