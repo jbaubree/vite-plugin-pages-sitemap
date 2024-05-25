@@ -30,6 +30,6 @@
     "typescript": "5.3.3",
     "vite": "4.5.3",
     "vitest": "0.34.6",
-    "xml-formatter": "3.6.0"
+    "xml-formatter": "3.6.2"
   }
 }
