@@ -9,15 +9,27 @@ import type { ResolvedOptions } from './types'
 export function getSitemapLinks(options: ResolvedOptions) {
   const hostname = options.hostname
   const routes = flatRoutes([...options.routes.values()])
+
   return routes
     .filter(pageRoute => !isDynamicRoute(pageRoute.component as string, options.nuxtStyle) || typeof pageRoute === 'string')
     .filter(pageRoute => !options.exclude.includes(pageRoute.path) && !options.exclude.some(rx => rx instanceof RegExp && rx.test(pageRoute.path)))
-    .map(pageRoute => ({
-      url: `${removeMaybeSuffix('/', hostname)}${typeof pageRoute === 'string' ? pageRoute : pageRoute.path}`,
-      changefreq: options.changefreq,
-      priority: options.priority,
-      lastmod: options.lastmod,
-    }))
+    .map((pageRoute) => {
+      const url = `${removeMaybeSuffix('/', hostname)}${typeof pageRoute === 'string' ? pageRoute : pageRoute.path}`
+      const route = {
+        url,
+        changefreq: options.changefreq,
+        priority: options.priority,
+        lastmod: options.lastmod,
+      }
+      if (options.i18n) {
+        const languages = options.i18n.languages.map(str => ({
+          lang: str,
+          url: str === options.i18n?.defaultLanguage ? hostname : `${removeMaybeSuffix('/', hostname)}${ensurePrefix('/', str)}`,
+        }))
+        return Object.assign(route, { links: options.i18n.defaultLanguage ? [...languages, { lang: 'x-default', hostname }] : languages })
+      }
+      return route
+    })
 }
 
 export function flatRoutes(routes: any[]) {

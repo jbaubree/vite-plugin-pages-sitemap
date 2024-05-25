@@ -9,7 +9,61 @@ import { resolveOptions } from '../src/options'
 
 describe('Index', () => {
   test('Get sitemap links', async () => {
-    expect(getSitemapLinks(resolveOptions({}))).toEqual([])
+    expect(getSitemapLinks(resolveOptions({ i18n: { languages: ['fr', 'en'] } }))).toEqual([])
+    expect(getSitemapLinks(resolveOptions({
+      i18n: { languages: ['fr', 'en'] },
+      routes: ['/route'],
+    }))).toMatchInlineSnapshot([{
+      lastmod: expect.any(Date),
+    }], `
+        [
+          {
+            "changefreq": "daily",
+            "lastmod": Any<Date>,
+            "links": [
+              {
+                "lang": "fr",
+                "url": "http://localhost/fr",
+              },
+              {
+                "lang": "en",
+                "url": "http://localhost/en",
+              },
+            ],
+            "priority": 1,
+            "url": "http://localhost/route",
+          },
+        ]
+      `)
+    expect(getSitemapLinks(resolveOptions({
+      i18n: { languages: ['fr', 'en'], defaultLanguage: 'fr' },
+      routes: ['/route'],
+    }))).toMatchInlineSnapshot([{
+      lastmod: expect.any(Date),
+    }], `
+          [
+            {
+              "changefreq": "daily",
+              "lastmod": Any<Date>,
+              "links": [
+                {
+                  "lang": "fr",
+                  "url": "http://localhost/",
+                },
+                {
+                  "lang": "en",
+                  "url": "http://localhost/en",
+                },
+                {
+                  "hostname": "http://localhost/",
+                  "lang": "x-default",
+                },
+              ],
+              "priority": 1,
+              "url": "http://localhost/route",
+            },
+          ]
+        `)
     expect(getSitemapLinks(resolveOptions({
       routes: ['/route'],
     }))).toMatchInlineSnapshot([{

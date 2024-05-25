@@ -13,6 +13,18 @@ interface Options {
    */
   routes: any[]
   /**
+   * Array of i18n languages.
+   * Example: {
+   *  defaultLanguage: 'fr'
+   *  languages: ['fr', 'en', 'es']
+   * }
+   * @default undefined
+   */
+  i18n?: {
+    defaultLanguage?: string
+    languages: string[]
+  }
+  /**
    * Excluded routes paths
    * @default []
    */
