@@ -30,7 +30,7 @@
     "@types/node": "^20.12.12",
     "@vitest/coverage-v8": "^1.6.0",
     "eslint": "^9.3.0",
-    "eslint-plugin-format": "^0.1.1",
+    "eslint-plugin-format": "^1.0.0",
     "pkgroll": "^2.1.1",
     "typescript": "^5.4.5",
     "vite": "^5.2.11",
