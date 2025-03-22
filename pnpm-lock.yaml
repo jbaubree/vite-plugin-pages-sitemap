@@ -13,7 +13,7 @@ importers:
         version: 8.0.0
       xml-formatter:
         specifier: ^3.6.2
-        version: 3.6.4
+        version: 3.6.5
     devDependencies:
       '@antfu/eslint-config':
         specifier: ^2.18.1
@@ -2523,8 +2523,8 @@ packages:
   wrappy@1.0.2:
     resolution: {integrity: sha512-l4Sp/DRseor9wL6EvV2+TuQn63dMkPjZ/sp9XkghTEbV9KlPS1xUsZ3u7/IQO4wxtcFB4bgpQPRcR3QCvezPcQ==}
 
-  xml-formatter@3.6.4:
-    resolution: {integrity: sha512-vkvTNw4u9mp72lMmJHw771NE9EJLX0kfwIcP+ZEo9eJ6HmotX23vmykyROyIQ9Y3a+ckdUdhxIE2ZO66rYuPrg==}
+  xml-formatter@3.6.5:
+    resolution: {integrity: sha512-5Dvux87y+abquO3Om8zRyOUdYkc22BnSS3zMhL2UgeCC+3lz9FbSBpAhzxmk+/qfTO3ypLRwTxJvByoG+FjTMA==}
     engines: {node: '>= 16'}
 
   xml-name-validator@4.0.0:
@@ -4962,7 +4962,7 @@ snapshots:
 
   wrappy@1.0.2: {}
 
-  xml-formatter@3.6.4:
+  xml-formatter@3.6.5:
     dependencies:
       xml-parser-xo: 4.1.3
 
