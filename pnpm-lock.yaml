@@ -40,8 +40,8 @@ importers:
         specifier: ^5.4.5
         version: 5.8.2
       vite:
-        specifier: ^5.2.11
-        version: 5.4.15(@types/node@20.17.28)
+        specifier: ^6.0.0
+        version: 6.2.3(@types/node@20.17.28)(yaml@2.7.0)
       vitest:
         specifier: ^1.6.0
         version: 1.6.1(@types/node@20.17.28)
@@ -57,7 +57,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^5.0.4
-        version: 5.2.3(vite@5.4.15(@types/node@20.17.28))(vue@3.5.13(typescript@5.8.2))
+        version: 5.2.3(vite@6.2.3(@types/node@20.17.28)(yaml@2.7.0))(vue@3.5.13(typescript@5.8.2))
       cross-env:
         specifier: ^7.0.3
         version: 7.0.3
@@ -68,11 +68,11 @@ importers:
         specifier: ^5.4.5
         version: 5.8.2
       vite:
-        specifier: ^5.2.11
-        version: 5.4.15(@types/node@20.17.28)
+        specifier: ^6.0.0
+        version: 6.2.3(@types/node@20.17.28)(yaml@2.7.0)
       vite-plugin-pages:
         specifier: ^0.32.1
-        version: 0.32.5(@vue/compiler-sfc@3.5.13)(vite@5.4.15(@types/node@20.17.28))(vue-router@4.5.0(vue@3.5.13(typescript@5.8.2)))
+        version: 0.32.5(@vue/compiler-sfc@3.5.13)(vite@6.2.3(@types/node@20.17.28)(yaml@2.7.0))(vue-router@4.5.0(vue@3.5.13(typescript@5.8.2)))
       vite-plugin-pages-sitemap:
         specifier: workspace:*
         version: link:..
@@ -2366,6 +2366,46 @@ packages:
       terser:
         optional: true
 
+  vite@6.2.3:
+    resolution: {integrity: sha512-IzwM54g4y9JA/xAeBPNaDXiBF8Jsgl3VBQ2YQ/wOY6fyW3xMdSoltIV3Bo59DErdqdE6RxUfv8W69DvUorE4Eg==}
+    engines: {node: ^18.0.0 || ^20.0.0 || >=22.0.0}
+    hasBin: true
+    peerDependencies:
+      '@types/node': ^18.0.0 || ^20.0.0 || >=22.0.0
+      jiti: '>=1.21.0'
+      less: '*'
+      lightningcss: ^1.21.0
+      sass: '*'
+      sass-embedded: '*'
+      stylus: '*'
+      sugarss: '*'
+      terser: ^5.16.0
+      tsx: ^4.8.1
+      yaml: ^2.4.2
+    peerDependenciesMeta:
+      '@types/node':
+        optional: true
+      jiti:
+        optional: true
+      less:
+        optional: true
+      lightningcss:
+        optional: true
+      sass:
+        optional: true
+      sass-embedded:
+        optional: true
+      stylus:
+        optional: true
+      sugarss:
+        optional: true
+      terser:
+        optional: true
+      tsx:
+        optional: true
+      yaml:
+        optional: true
+
   vitest@1.6.1:
     resolution: {integrity: sha512-Ljb1cnSJSivGN0LqXd/zmDbWEM0RNNg2t1QW/XUhYl/qPqyu7CsqeWtqQXHVaJsecLPuDoak2oJcZN2QoRIOag==}
     engines: {node: ^18.0.0 || >=20.0.0}
@@ -3126,9 +3166,9 @@ snapshots:
       '@typescript-eslint/types': 8.3.0
       eslint-visitor-keys: 3.4.3
 
-  '@vitejs/plugin-vue@5.2.3(vite@5.4.15(@types/node@20.17.28))(vue@3.5.13(typescript@5.8.2))':
+  '@vitejs/plugin-vue@5.2.3(vite@6.2.3(@types/node@20.17.28)(yaml@2.7.0))(vue@3.5.13(typescript@5.8.2))':
     dependencies:
-      vite: 5.4.15(@types/node@20.17.28)
+      vite: 6.2.3(@types/node@20.17.28)(yaml@2.7.0)
       vue: 3.5.13(typescript@5.8.2)
 
   '@vitest/coverage-v8@1.6.1(vitest@1.6.1(@types/node@20.17.28))':
@@ -4686,7 +4726,7 @@ snapshots:
       - supports-color
       - terser
 
-  vite-plugin-pages@0.32.5(@vue/compiler-sfc@3.5.13)(vite@5.4.15(@types/node@20.17.28))(vue-router@4.5.0(vue@3.5.13(typescript@5.8.2))):
+  vite-plugin-pages@0.32.5(@vue/compiler-sfc@3.5.13)(vite@6.2.3(@types/node@20.17.28)(yaml@2.7.0))(vue-router@4.5.0(vue@3.5.13(typescript@5.8.2))):
     dependencies:
       '@types/debug': 4.1.12
       debug: 4.4.0(supports-color@5.5.0)
@@ -4696,7 +4736,7 @@ snapshots:
       json5: 2.2.3
       local-pkg: 1.0.0
       picocolors: 1.1.1
-      vite: 5.4.15(@types/node@20.17.28)
+      vite: 6.2.3(@types/node@20.17.28)(yaml@2.7.0)
       yaml: 2.7.0
     optionalDependencies:
       '@vue/compiler-sfc': 3.5.13
@@ -4712,6 +4752,16 @@ snapshots:
     optionalDependencies:
       '@types/node': 20.17.28
       fsevents: 2.3.3
+
+  vite@6.2.3(@types/node@20.17.28)(yaml@2.7.0):
+    dependencies:
+      esbuild: 0.25.1
+      postcss: 8.5.3
+      rollup: 4.37.0
+    optionalDependencies:
+      '@types/node': 20.17.28
+      fsevents: 2.3.3
+      yaml: 2.7.0
 
   vitest@1.6.1(@types/node@20.17.28):
     dependencies:
