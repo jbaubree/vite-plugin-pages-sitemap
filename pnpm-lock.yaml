@@ -35,7 +35,7 @@ importers:
         version: 0.1.3(eslint@9.14.0)
       pkgroll:
         specifier: ^2.1.1
-        version: 2.13.0(typescript@5.8.3)
+        version: 2.13.1(typescript@5.8.3)
       typescript:
         specifier: ^5.4.5
         version: 5.8.3
@@ -2189,8 +2189,8 @@ packages:
   pkg-types@2.1.0:
     resolution: {integrity: sha512-wmJwA+8ihJixSoHKxZJRBQG1oY8Yr9pGLzRmSsNms0iNWyHHAlZCa7mmKiFR10YPZuz/2k169JiS/inOjBCZ2A==}
 
-  pkgroll@2.13.0:
-    resolution: {integrity: sha512-JlWEoQW6cevBBOVzpqKZRYOa97dYB08ddKTJZG5hrknOzKKTiZIiFIvUuO/ANbxy3yGHSl1EeTL5AGdHKCDwrw==}
+  pkgroll@2.13.1:
+    resolution: {integrity: sha512-SO50Oh3ycFUI26n5au3Iq/XhC1x8garmmaIF5m/8f+s8ntUWC9oZONlz0rjT12OSfY3gCkc564t3HWvuClzQNg==}
     engines: {node: '>=18'}
     hasBin: true
     peerDependencies:
@@ -4746,7 +4746,7 @@ snapshots:
       exsolve: 1.0.4
       pathe: 2.0.3
 
-  pkgroll@2.13.0(typescript@5.8.3):
+  pkgroll@2.13.1(typescript@5.8.3):
     dependencies:
       '@rollup/plugin-alias': 5.1.1(rollup@4.43.0)
       '@rollup/plugin-commonjs': 28.0.5(rollup@4.43.0)
