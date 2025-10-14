@@ -25,7 +25,7 @@
     "xml-formatter": "^3.6.2"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.18.1",
+    "@antfu/eslint-config": "^5.0.0",
     "@antfu/utils": "^0.7.8",
     "@types/node": "^20.12.12",
     "@vitest/coverage-v8": "^1.6.0",
