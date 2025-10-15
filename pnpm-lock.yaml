@@ -13,7 +13,7 @@ importers:
         version: 8.0.0
       xml-formatter:
         specifier: ^3.6.2
-        version: 3.6.6
+        version: 3.6.7
     devDependencies:
       '@antfu/eslint-config':
         specifier: ^2.18.1
@@ -2493,16 +2493,16 @@ packages:
   wrappy@1.0.2:
     resolution: {integrity: sha512-l4Sp/DRseor9wL6EvV2+TuQn63dMkPjZ/sp9XkghTEbV9KlPS1xUsZ3u7/IQO4wxtcFB4bgpQPRcR3QCvezPcQ==}
 
-  xml-formatter@3.6.6:
-    resolution: {integrity: sha512-yfofQht42x2sN1YThT6Er6GFXiQinfDAsMTNvMPi2uZw5/Vtc2PYHfvALR8U+b2oN2ekBxLd2tGWV06rAM8nQA==}
+  xml-formatter@3.6.7:
+    resolution: {integrity: sha512-IsfFYJQuoDqtUlKhm4EzeoBOb+fQwzQVeyxxAQ0sThn/nFnQmyLPTplqq4yRhaOENH/tAyujD2TBfIYzUKB6hg==}
     engines: {node: '>= 16'}
 
   xml-name-validator@4.0.0:
     resolution: {integrity: sha512-ICP2e+jsHvAj2E2lIHxa5tjXRlKDJo4IdvPvCXbXQGdzSfmSpNVyIKMvoZHjDY9DP0zV17iI85o90vRFXNccRw==}
     engines: {node: '>=12'}
 
-  xml-parser-xo@4.1.4:
-    resolution: {integrity: sha512-wo+yWDNeMwd1ctzH4CsiGXaAappDsxuR+VnmPewOzHk/zvefksT2ZlcWpAePl11THOWgnIZM4GjvumevurNWZw==}
+  xml-parser-xo@4.1.5:
+    resolution: {integrity: sha512-TxyRxk9sTOUg3glxSIY6f0nfuqRll2OEF8TspLgh5mZkLuBgheCn3zClcDSGJ58TvNmiwyCCuat4UajPud/5Og==}
     engines: {node: '>= 16'}
 
   y18n@5.0.8:
@@ -4908,13 +4908,13 @@ snapshots:
 
   wrappy@1.0.2: {}
 
-  xml-formatter@3.6.6:
+  xml-formatter@3.6.7:
     dependencies:
-      xml-parser-xo: 4.1.4
+      xml-parser-xo: 4.1.5
 
   xml-name-validator@4.0.0: {}
 
-  xml-parser-xo@4.1.4: {}
+  xml-parser-xo@4.1.5: {}
 
   y18n@5.0.8: {}
 
