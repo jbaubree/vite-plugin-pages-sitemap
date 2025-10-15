@@ -53,7 +53,7 @@ importers:
         version: 3.5.22(typescript@5.9.3)
       vue-router:
         specifier: ^4.3.2
-        version: 4.6.0(vue@3.5.22(typescript@5.9.3))
+        version: 4.6.2(vue@3.5.22(typescript@5.9.3))
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^5.0.4
@@ -72,7 +72,7 @@ importers:
         version: 5.4.20(@types/node@20.19.21)
       vite-plugin-pages:
         specifier: ^0.33.0
-        version: 0.33.1(@vue/compiler-sfc@3.5.22)(vite@5.4.20(@types/node@20.19.21))(vue-router@4.6.0(vue@3.5.22(typescript@5.9.3)))
+        version: 0.33.1(@vue/compiler-sfc@3.5.22)(vite@5.4.20(@types/node@20.19.21))(vue-router@4.6.2(vue@3.5.22(typescript@5.9.3)))
       vite-plugin-pages-sitemap:
         specifier: workspace:*
         version: link:..
@@ -2574,8 +2574,8 @@ packages:
     peerDependencies:
       eslint: '>=6.0.0'
 
-  vue-router@4.6.0:
-    resolution: {integrity: sha512-YRrWLi4ayHe1d6zyH6sMPwF/WwcDY8XgUOfQGa0Kx4kmugSorLavD1ExrM/Y83B4X2NQMXYpJFSq2pbZh9ildQ==}
+  vue-router@4.6.2:
+    resolution: {integrity: sha512-my83mxQKXyCms9EegBXZldehOihxBjgSjZqrZwgg4vBacNGl0oBCO+xT//wgOYpLV1RW93ZfqxrjTozd+82nbA==}
     peerDependencies:
       vue: ^3.5.0
 
@@ -5014,7 +5014,7 @@ snapshots:
       - supports-color
       - terser
 
-  vite-plugin-pages@0.33.1(@vue/compiler-sfc@3.5.22)(vite@5.4.20(@types/node@20.19.21))(vue-router@4.6.0(vue@3.5.22(typescript@5.9.3))):
+  vite-plugin-pages@0.33.1(@vue/compiler-sfc@3.5.22)(vite@5.4.20(@types/node@20.19.21))(vue-router@4.6.2(vue@3.5.22(typescript@5.9.3))):
     dependencies:
       '@types/debug': 4.1.12
       debug: 4.4.1(supports-color@5.5.0)
@@ -5029,7 +5029,7 @@ snapshots:
       yaml: 2.8.0
     optionalDependencies:
       '@vue/compiler-sfc': 3.5.22
-      vue-router: 4.6.0(vue@3.5.22(typescript@5.9.3))
+      vue-router: 4.6.2(vue@3.5.22(typescript@5.9.3))
     transitivePeerDependencies:
       - supports-color
 
@@ -5089,7 +5089,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  vue-router@4.6.0(vue@3.5.22(typescript@5.9.3)):
+  vue-router@4.6.2(vue@3.5.22(typescript@5.9.3)):
     dependencies:
       '@vue/devtools-api': 6.6.4
       vue: 3.5.22(typescript@5.9.3)
