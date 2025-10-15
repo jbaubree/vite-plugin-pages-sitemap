@@ -35,7 +35,7 @@ importers:
         version: 0.1.3(eslint@9.14.0)
       pkgroll:
         specifier: ^2.1.1
-        version: 2.18.1(typescript@5.9.3)
+        version: 2.19.0(typescript@5.9.3)
       typescript:
         specifier: ^5.4.5
         version: 5.9.3
@@ -2143,8 +2143,8 @@ packages:
   pkg-types@2.2.0:
     resolution: {integrity: sha512-2SM/GZGAEkPp3KWORxQZns4M+WSeXbC2HEvmOIJe3Cmiv6ieAJvdVhDldtHqM5J1Y7MrR1XhkBT/rMlhh9FdqQ==}
 
-  pkgroll@2.18.1:
-    resolution: {integrity: sha512-5fXXV3Bvc0zvD3kwmPrqwJJ84kIB3RUV3VC9RHkQa2bcRLj4s2W/J0PkVL57VzlLlG+BeE09lFp0wr1ULBGQuQ==}
+  pkgroll@2.19.0:
+    resolution: {integrity: sha512-MDVRR0s/epE/zsj6TGty86z43Ll9BEzvgGZfrPXQQBM7ZRqydeG7E5uar4Q6flc0ywxsYrwE7kK5OSvBwAHuqA==}
     engines: {node: '>=18'}
     hasBin: true
     peerDependencies:
@@ -2635,6 +2635,11 @@ packages:
 
   yaml@2.8.0:
     resolution: {integrity: sha512-4lLa/EcQCB0cJkyts+FpIRx5G/llPxfP6VQU5KByHEhLxY3IJCH0f0Hy1MHI8sClTvsIb8qwRJ6R/ZdlDJ/leQ==}
+    engines: {node: '>= 14.6'}
+    hasBin: true
+
+  yaml@2.8.1:
+    resolution: {integrity: sha512-lcYcMxX2PO9XMGvAJkJ3OsNMw+/7FKes7/hgerGUYWIoWu5j/+YQqcZr5JnPZWzOsEBgMbSbiSTn/dv/69Mkpw==}
     engines: {node: '>= 14.6'}
     hasBin: true
 
@@ -4638,7 +4643,7 @@ snapshots:
       exsolve: 1.0.7
       pathe: 2.0.3
 
-  pkgroll@2.18.1(typescript@5.9.3):
+  pkgroll@2.19.0(typescript@5.9.3):
     dependencies:
       '@rollup/plugin-alias': 5.1.1(rollup@4.52.4)
       '@rollup/plugin-commonjs': 28.0.7(rollup@4.52.4)
@@ -4652,6 +4657,7 @@ snapshots:
       magic-string: 0.30.19
       rollup: 4.52.4
       rollup-pluginutils: 2.8.2
+      yaml: 2.8.1
     optionalDependencies:
       typescript: 5.9.3
 
@@ -5136,6 +5142,8 @@ snapshots:
   yaml@2.7.0: {}
 
   yaml@2.8.0: {}
+
+  yaml@2.8.1: {}
 
   yargs-parser@21.1.1: {}
 
