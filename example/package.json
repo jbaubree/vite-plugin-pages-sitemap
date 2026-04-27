@@ -13,7 +13,7 @@
     "cross-env": "^7.0.3",
     "nodemon": "^3.1.0",
     "typescript": "^5.4.5",
-    "vite": "^5.2.11",
+    "vite": "^6.0.0",
     "vite-plugin-pages": "^0.33.0",
     "vite-plugin-pages-sitemap": "workspace:*"
   }
