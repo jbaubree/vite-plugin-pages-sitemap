@@ -5,6 +5,14 @@
   "packageManager": "pnpm@9.15.9",
   "description": "vite-plugin-pages based sitemap generator",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jbaubree/vite-plugin-pages-sitemap.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jbaubree/vite-plugin-pages-sitemap/issues"
+  },
+  "homepage": "https://github.com/jbaubree/vite-plugin-pages-sitemap#readme",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
