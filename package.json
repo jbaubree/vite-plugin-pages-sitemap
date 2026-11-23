@@ -1,6 +1,9 @@
 {
   "name": "vite-plugin-pages-sitemap",
   "version": "1.7.1",
+  "bugs": {
+    "url": "https://github.com/jbaubree/vite-plugin-pages-sitemap/issues"
+  },
   "type": "module",
   "packageManager": "pnpm@9.15.9",
   "description": "vite-plugin-pages based sitemap generator",
